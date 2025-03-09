@@ -1,22 +1,22 @@
 // Problem Link : https://dimikoj.com/problems/1/even-odd-1
 
-#include <bits/stdc++.h>
-using namespace std;
+#include <stdio.h>
 
 int main(){
+    
     int t;
-    cin >> t;
+    scanf("%d",&t);
+    
     while(t--){
-        int a;
-        cin >> a;
-        if(a%2==0){
-            cout << "even"<<endl;
+        int n ;
+        scanf("%d",&n);
+        if(n % 2 == 0){
+            printf("even\n");
         }
         else{
-            cout << "odd" << endl;
+            printf("odd\n");
         }
     }
-    
     
     return 0;
 }
