@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+int main(){
+
+    int test_case;
+    scanf("%d",&test_case);
+
+    while (test_case--)
+    {
+        char digit[105];
+        scanf("%s",&digit);
+        int size = strlen(digit);
+        int last_digit = digit[size - 1] - '0';
+        if (last_digit % 2 ==0)
+        {
+            printf("even\n");
+        }
+        else
+        {
+            printf("odd\n");
+        }
+        
+        
+    }
+    
+
+
+    return 0;
+}
