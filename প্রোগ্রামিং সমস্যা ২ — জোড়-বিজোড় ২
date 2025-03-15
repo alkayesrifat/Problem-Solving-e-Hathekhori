@@ -1,29 +1,32 @@
-#include<stdio.h>
 
-int main(){
+ #include <stdio.h>
 
-    int test_case;
-    scanf("%d",&test_case);
-
-    while (test_case--)
-    {
-        char digit[105];
-        scanf("%s",&digit);
-        int size = strlen(digit);
-        int last_digit = digit[size - 1] - '0';
-        if (last_digit % 2 ==0)
-        {
-            printf("even\n");
-        }
-        else
-        {
-            printf("odd\n");
-        }
-        
-        
-    }
+ int main() {
+ 
+     int test_case;
+     scanf("%d",&test_case);
+ 
     
-
-
-    return 0;
-}
+ 
+     while (test_case--)
+     {
+         char digits[102];
+         scanf("%s",&digits);
+         int size_of_digits = strlen(digits);
+         char last_digit = digits[size_of_digits - 1];
+         int last_number = last_digit - '0';
+         if (last_number % 2 == 0)
+         {
+             printf("even\n");
+         }
+         else
+         {
+             printf("odd\n");
+         }
+         
+         
+     }
+     
+     
+     return 0;
+ }
